@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './Header';
+import Nav from './Nav';
+import Result from './Result';
+import requests from './service/requests';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+function App (){
+  const [selectedOption,setSelected]=useState(requests.Animation);
+    return (
+      <div className="App">
+
+        {/* header */}
+            <Header/>
+
+            {/* NAV */}
+            <Nav setSelected={setSelected}/>
+
+        {/*Result */}
+        <Result selectedOption={selectedOption}/>
+      </div>
+    );
+  }
 
 export default App;

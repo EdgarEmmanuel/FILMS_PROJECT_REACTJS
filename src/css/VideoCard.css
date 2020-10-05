@@ -1,0 +1,45 @@
+.videocard{
+    color:white;
+    width:500px;
+    height:400px;
+    padding:20px;
+    text-align:center;
+    flex-basis:30%;
+}
+
+.videocard img{
+    width:330px;
+    object-fit: contain;
+    height:250px;
+    cursor:pointer;
+    margin:10px 0px;
+    transition:transform 50ms easy-in;
+}
+
+.videocard img:hover{
+   transform:scale(1.1);
+}
+
+.videocard .voteAverage{
+    display:none;
+}
+
+.videocard:hover > .voteAverage{
+    display:inline;
+}
+
+.videocard h1:last-of-type{
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.videocard p{
+    margin:5px 0px;
+    font-style:italic;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}

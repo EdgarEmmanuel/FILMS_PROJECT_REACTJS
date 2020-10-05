@@ -1,0 +1,58 @@
+.header{
+    display:flex;
+    /* background:black; */
+    color:white;
+    align-items: center;
+    padding:20px;
+    overflow-x: scroll;
+    justify-content:space-between;
+}
+
+/* hide the scrollbar for Chrome , Safari and EDge */
+
+.header::-webkit-scrollbar{
+    display:none;
+}
+
+.header .header__icons{
+    display:flex;
+    align-items:center;
+    justify-items: space;
+}
+
+
+/* ==========header__icon=============== */
+.header .header__icons .header__icon{
+    margin:0px 20px;
+    text-align:center;
+    overflow: hidden;
+}
+
+.header__icon p{
+    display:none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.header__icon .MuiSvgIcon-root{
+    font-size:30px;
+}
+
+.header__icon:hover p{
+    display:block;
+    color:white;
+    font-size:18px;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+
+
+.header__icon:first-of-type p{
+    display:block;
+    color:white;
+}
+
+.header img{
+    object-fit: contain;
+    width:10rem;
+}
