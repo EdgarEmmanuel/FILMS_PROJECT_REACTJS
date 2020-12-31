@@ -36,8 +36,7 @@ function Header(){
                 <p>Trending</p>
             </div>
             </div>
-            <img src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png"
-            className="" alt="hulu clone "/>
+            <h1>FILM TRAILER PLATFORM</h1>
            </header>
     )
 }
