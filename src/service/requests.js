@@ -1,4 +1,4 @@
-const API = "64ec5aa85e2c2ae5250edc8273a571cf";
+const API = "<API_KEY>";
 
 export default {
     TrendingWeek:`/trending/all/week?api_key=${API}&language=en-US`,
